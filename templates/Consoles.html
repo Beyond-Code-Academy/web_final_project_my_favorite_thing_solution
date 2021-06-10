@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Flask Template</title>
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+	 crossorigin="anonymous">
+
+	</head>
+	<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+        <a class="nav-link active"  href="/">Home</a>
+        <a class="nav-link" href="/Consoles">Models I love</a>
+        <a class="nav-link" href="/Games">My Games collection</a>
+         <!-- <a class="nav-link" href="/Contact">Contact Us</a> -->
+  </div>
+</nav>
+      
+    <h1 class="display-1"> Available consoles </h1>
+ 
+<div class="container" id="ps5">
+		<div class="row">
+			<div class="col">
+				<div class="card" ">
+		         <img src=" https://i5.walmartimages.com/asr/fd596ed4-bf03-4ecb-a3b0-7a9c0067df83.bb8f535c7677cebdd4010741c6476d3a.png?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="ps5 photo ">
+		        <div class="card-body ">
+		          <h5 class="card-title ">PS 5 digital </h5>
+		          <p >PS5 is the most powerful PlayStation that Sony's ever made. In addition to a supercharged customised CPU and GPU, the system also plays host to an ultra-high speed SSD hard drive, allowing for lightning fast loading speeds and entirely new experiences</p>
+              <!-- <p> $399 </p>
+		          <a href="# " class="btn btn-primary ">Buy it Now</a><br>
+		          <a href=" " class="btn btn-secondary ">Add to whishlist</a> -->
+		          
+		      </div>
+		      <div class="col">
+		        <div class="card ">
+		        <img src="/static/2.png" class="card-img-top
+				 " alt=" ">
+		        <div class="card-body ">
+		        <h5 class="card-title ">Ps 4 pro</h5>
+		         <p> The PS4 Pro represents a meatier, more powerful unit that delivers better performance capable of 4K gaming and HDR. Its other new console became known as the PS4 Slim, which offers the same functionality as the launch model in a sleeker form factor. Sony calls this the 'PS4' as it's phased out the original console. </p>
+             <!-- <p> $299 </p>
+		        <a href="# " class="btn btn-primary ">Buy it Now</a>
+            <br>
+             <a href=" " class="btn btn-secondary ">Add to whishlist</a> -->
+		
+		      </div>
+		      </div>
+		
+		      </div>
+		      <div class="col">
+		        <div class="card ">
+		        <img src="data:image/jpeg;base64,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" class="card-img-top
+				 " alt="Bugatti veyron 16.4 super ">
+		        <div class="card-body ">
+		        <h5 class="card-title ">PSP Sony</h5>
+		        <p> Several models of the console were released, before the PSP line was succeeded by the PlayStation Vita, released in Japan in 2011 and worldwide a year later. ... Hardware shipments of the PSP ended worldwide in 2014; production of UMDs ended when the last Japanese factory producing them closed in late 2016</p>
+            <!-- <p> $150 </p>
+		        <a href="# " class="btn btn-primary ">Buy it now</a> <a href=" " class="btn btn-secondary ">Add to whishlist</a> -->
+		
+		     </div>
+		    </div>
+
+  
+	</body>
+
+
+
+</html>
