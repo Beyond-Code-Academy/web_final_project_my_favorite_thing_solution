@@ -17,10 +17,6 @@ def Consoles():
 def Games():
 	return render_template('Games.html')
 
-@web_site.route('/Contact')
-def Contact():
-	return render_template('Contact.html')
-
 
 
 web_site.run(host='0.0.0.0', port=8080)
